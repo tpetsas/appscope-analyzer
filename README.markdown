@@ -38,8 +38,10 @@ works well).  It works on Linux, OS X, and Windows (with [Cygwin][]).
 
 Installing and setting up `appscope-analyzer` will take about one minute.
 
-First, clone the Mercurial repository. Next, open your `~/.bashrc` file and
+First, [download][] the tool or clone the Mercurial repository. Next, open your `~/.bashrc` file and
 put an alias there:
+
+[download]: https://bitbucket.org/tpetsas/appscope-analyzer/get/d2d143e2711a.zip
 
   alias asa='python ~/path/to/appscope-analyzer.py'
 
