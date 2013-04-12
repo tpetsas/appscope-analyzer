@@ -1,23 +1,9 @@
 appscope-analyzer
 =======
 
-`appscope-analyzer` is a command-line tool that parses the Appscope logs
+`appscope-analyzer` is a command-line tool that parses the [AppScope][] logs
  and produces per process (PID) or per application (UID) power consumption
  information
-
-
-AppScope
-------
-
- `appscope-analyzer` is a command-line tool that parses the AppScope logs
- abd produces per process (PID) or per application (UID) power consumption
- data.
-
- AppScope project aims to develop a suite of software tools for estimating
- the energy consumption of application running on Android smartphone. For
- more information about the project you can visit the official web site:
- http://css3.yonsei.ac.kr:5612/appscope
-
 
 ### About AppScope
 
@@ -69,14 +55,16 @@ Using appscope-analyzer
 ### List Monitored Apps
 
 To show a list of the monitored apps use `asa -s HT181P8A0128/ -l`
-PID     UID     APP PACKAGE
-...     ...     ...
-344     10066   com.webroot.security                     
-659     10058   com.antivirus                            
-660     10058   com.antivirus                            
-665     10058   com.antivirus                            
-1157    10075   jackpal.androidterm
-...     ...     ...
+
+
+    PID     UID     APP PACKAGE
+    ...     ...     ...
+    344     10066   com.webroot.security                     
+    659     10058   com.antivirus                            
+    660     10058   com.antivirus                            
+    665     10058   com.antivirus                            
+    1157    10075   jackpal.androidterm
+    ...     ...     ...
 
 (`-q` option is available to hide PID column)
 
@@ -86,17 +74,18 @@ To show the AppScope energy samples of a spesific app you can use:
 `asa -s HT181P8A0128/ -u 10066` or
 `asa -s HT181P8A0128/ -a com.webroot.security`
 
-TIME  CPU       DISPLAY  GPS       WIFI    3G       TOTAL
-2      34.2537  0.0000   0.0000    0.0000  0.0000    34.2537
-3     548.0595  0.0000   0.0000    0.0000  0.0000   548.0595
-4     542.8593  0.0000   0.0000    0.0000  0.0000   542.8593
-5     542.3506  0.0000   0.0000    0.0000  0.0000   542.3506
-6     542.6931  0.0000   0.0000    0.0000  0.0000   542.6931
-7     559.4774  0.0000   0.0000    0.0000  0.0000   559.4774
-8     553.9380  0.0000   0.0000    0.0000  0.0000   553.9380
-9     548.0595  0.0000   0.0000    0.0000  0.0000   548.0595
-10    548.1748  0.0000   0.0000    0.0000  0.0000   548.1748
-...   ...       ...      ...       ...     ...      ...
+
+    TIME  CPU       DISPLAY  GPS       WIFI    3G       TOTAL
+    2      34.2537  0.0000   0.0000    0.0000  0.0000    34.2537
+    3     548.0595  0.0000   0.0000    0.0000  0.0000   548.0595
+    4     542.8593  0.0000   0.0000    0.0000  0.0000   542.8593
+    5     542.3506  0.0000   0.0000    0.0000  0.0000   542.3506
+    6     542.6931  0.0000   0.0000    0.0000  0.0000   542.6931
+    7     559.4774  0.0000   0.0000    0.0000  0.0000   559.4774
+    8     553.9380  0.0000   0.0000    0.0000  0.0000   553.9380
+    9     548.0595  0.0000   0.0000    0.0000  0.0000   548.0595
+    10    548.1748  0.0000   0.0000    0.0000  0.0000   548.1748
+    ...   ...       ...      ...       ...     ...      ...
 
 To show the energy samlpes of a spesific process just use:
 `asa -s HT181P8A0128/ -p 344`
@@ -115,14 +104,16 @@ You can search for a specific pattern in the output by using the
 
 `asa -s HT181P8A0128/ -l -g 'google'`
 
-PID     UID     APP PACKAGE
-...     ...     ...
-307     1000    com.google.android.backup                
-308     1000    com.google.android.backup                
-2765    10034   com.google.android.inputmethod.latin     
-5140    10026   com.google.android.syncadapters.contacts 
-5265    1000    com.google.android.backup
-...     ...     ...
+
+    PID     UID     APP PACKAGE
+    ...     ...     ...
+    307     1000    com.google.android.backup                
+    308     1000    com.google.android.backup                
+    2765    10034   com.google.android.inputmethod.latin     
+    5140    10026   com.google.android.syncadapters.contacts 
+    5265    1000    com.google.android.backup
+    ...     ...     ...
+
 
 Problems, Contributions, Etc
 ----------------------------
