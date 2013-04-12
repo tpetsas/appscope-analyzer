@@ -38,7 +38,7 @@ works well).  It works on Linux, OS X, and Windows (with [Cygwin][]).
 
 Installing and setting up `appscope-analyzer` will take about one minute.
 
-First, [download][] the tool or clone the Mercurial repository. Next, open your `~/.bashrc` file and
+First, [download][] the tool or clone the [Mercurial repository][]. Next, open your `~/.bashrc` file and
 put an alias there:
 
 [download]: https://bitbucket.org/tpetsas/appscope-analyzer/get/d2d143e2711a.zip
@@ -129,5 +129,5 @@ If you want to contribute code to `appscope-analyzer`, that's great!  Fork the
 [Mercurial repository][] on BitBucket or the [git mirror][] on GitHub and send me
 a pull request.
 
-[Mercurial repository]: http://bitbucket.org/
-[git mirror]: https://tpetsas@bitbucket.org/tpetsas/appscope-analyzer.git
+[Mercurial repository]: https://tpetsas@bitbucket.org/tpetsas/appscope-analyzer.git 
+[git mirror]: https://github.com/tpetsas/appscope-analyzer.git
